@@ -1,0 +1,26 @@
+<div class="container border">
+    <h3>Server dashboard component</h3>
+    <hr>
+    <div class="row">
+        <div class="col-xs-12 col-md-6">
+            <label for="">
+                Server name
+                <input type="text" name="" id="" class="form-control" [(ngModel)]="serverName">
+            </label>
+            <span style="margin-left:2%"></span>
+            <button class="btn btn-success" (click)="addServer()">Add</button>
+        </div>
+    </div>
+
+    <div class="row" >
+        <div class="col-lg-12"><span *ngIf="isServersEmpty then serversunavailable else serversavailable"></span></div>
+    </div>
+    <ng-template #serversavailable>
+        <ul class="list-group" >
+            <li class="list-group-item" *ngFor="let server of servers">{{server}}</li>
+        </ul>
+    </ng-template>
+    <ng-template #serversunavailable >
+        <div class="errorMessage">No servers available!!!</div>
+    </ng-template>
+</div>

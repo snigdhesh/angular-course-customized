@@ -1,0 +1,8 @@
+.errorMessage{
+    border: 1px solid maroon;
+    background-color: mistyrose;
+    color: maroon;
+    padding: 1%;
+    border-radius: 5px;
+    font-size: 20px;
+}
