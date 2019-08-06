@@ -13,6 +13,7 @@ import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-edit.component';
 import {FormsModule} from '@angular/forms';
 import { ServerDashboardComponent } from './server-dashboard/server-dashboard.component';
+import { ServersComponent } from './binding-custom-properties/servers/servers.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { ServerDashboardComponent } from './server-dashboard/server-dashboard.co
     RecipeItemComponent,
     ShoppingListComponent,
     ShoppingEditComponent,
-    ServerDashboardComponent
+    ServerDashboardComponent,
+    ServersComponent
   ],
   imports: [
     BrowserModule,
